@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+    <!-- CSS -->
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link href="css/roboto.css" rel="stylesheet">
+    <link href="css/material-icons.css" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="navbar navbar-dark  navbar-full bg-success doc-navbar-default">
+      <!-- <button aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler" data-target="#navdrawerDefault" data-toggle="navdrawer"><span class="navbar-toggler-icon"></span></button>  -->
+      <span class="navbar-brand mr-auto">        
+        <image src="css/gardening-tree-svgrepo-com.svg"  width="30" height="30">&nbsp;&nbsp;Plantinhas</span> 
+    </header>
+    <div class="card">
+      <button type="button" id="add-plant" class="btn btn-warning">Adicionar +</button>
+    </div>
+
+    <div id="cards-aviso" class="container">
+      <div class="alert alert-warning" role="alert">
+        <p>Você ainda não adicionou nenhuma planta, para isso, <i>clique no botão acima "Adicionar +"</i>.</p>
+      </div>
+   
+    </div>    
+    <div id="cards-form-1" class="container">
+      <form>
+        <div class="form-group">
+          Nome da planta
+          <input type="text" class="form-control" id="plantName1" aria-describedby="plant1Help" placeholder="Insira o nome da planta">
+          <small id="plant1Help" class="form-text text-muted">Insira o nome da planta</small>
+        </div>
+        <div class="form-group">       
+          Desejo ser lembrado de regar...
+          <select id="freq-a" class="custom-select">
+             <option value="1">Diariamente</option>
+             <option value="2">A cada 2 (dois) dias</option>
+             <option value="3">A cada 3 (três) dias</option>
+             <option value="4">Semanalmente</option>
+          </select>
+          <br />
+          E pelo menos...          
+          <select id="freq-b" class="custom-select">
+            <option value="1">Uma vez por dia</option>
+            <option value="2">2 (duas) vezes por dia</option>
+            <option value="3">3 (três) vezes por dia</option>
+          </select>
+          <br />
+          Com o primeiro aviso pela
+          <select id="freq-c" class="custom-select">
+            <option value="1">Manhã (09:00 h)</option>
+            <option value="2">Tarde (16:00 h)</option>
+            <option value="3">Noite (20:00 h)</option>
+          </select>
+        </div>
+        <button type="button" id="form-1-submit" class="btn btn-success">Salvar</button>
+        <button type="button" id="form-1-cancel" class="btn btn-danger">Cancelar</button>
+      </form>
+    </div>
+    <div id="cards-main" class="container">
+<!--
+      <div aria-hidden="true" class="navdrawer" id="navdrawerDefault" tabindex="-1">
+        <div class="navdrawer-content">
+          
+          <div class="navdrawer-header">
+            <a class="navbar-brand px-0" href="#">Plantinhas</a>
+          </div>
+          
+          <nav class="navdrawer-nav">
+            <a class="nav-item nav-link active" href="#">Active</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            <a class="nav-item nav-link" href="#">Link</a>
+          </nav>
+          
+          <div class="navdrawer-divider"></div>
+          <p class="navdrawer-subheader">Navdrawer subheader</p>
+          <ul class="navdrawer-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="material-icons mr-3">alarm_on</i> Active with icon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"><i class="material-icons mr-3">alarm_off</i> Disabled with icon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="material-icons mr-3">link</i> Link with icon</a>
+            </li>
+          </ul>
+    
+        </div>              
+      </div> -->
+
+
+      
+    </div>
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+    <script src="js/material.min.js"></script>
+    <script src="js/bootstrap-4-autocomplete.min.js"></script>
+    <script src="cordova.js"></script> 
+    <script src="js/plantas.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
